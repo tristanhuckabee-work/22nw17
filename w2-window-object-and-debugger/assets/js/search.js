@@ -1,29 +1,34 @@
 function findElementById(id) {
-    // Return the element in the DOM with corresponding `id`
-
-    // Your code here
+  // Return the element in the DOM with corresponding `id`
+  return document.querySelector(`#${id}`);
 }
 
 function findFirstElementOfTag(tag) {
-    // Return the first occurence of an element of tag name `tag`
-
-    // Your code here
+  // Return the first occurence of an element of tag name `tag`
+  return document.querySelector(`${tag}`);
 }
 
 function findFirstElementOfClass(cls) {
-    // Return the first occurence of an element of class `cls`
+  // Return the first occurence of an element of class `cls`
+  return document.querySelector(`.${cls}`);
 
-    // Your code here
 }
 
 function findElementsOfTag(tag) {
-    // Return an array of elements that have a tag name of `tag`
+  // Return an array of elements that have a tag name of `tag`
+  return document.querySelectorAll(`${tag}`);
 
-    // Your code here
 }
 
 function findElementsOfClass(cls) {
-    // Return an array of elements that have are of class `cls`
+  // Return an array of elements that have are of class `cls`
+  return document.querySelectorAll(`.${cls}`);
 
-    // Your code here
+}
+export {
+  findElementById,
+  findElementsOfClass,
+  findFirstElementOfClass,
+  findElementsOfTag,
+  findFirstElementOfTag
 }
