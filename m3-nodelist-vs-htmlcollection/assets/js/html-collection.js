@@ -1,6 +1,14 @@
 export default () => {
   const bodyChildElements = document.body.children; // HTMLCollection [div]
-  // console.log(bodyChildElements);
+  console.log(bodyChildElements);
+  // bodyChildElements.forEach(el => console.log(el));
+  // for(let el in bodyChildElements) {
+  //   console.log(el);
+  // }
+  for (let i = 0; i < bodyChildElements.length; i++) {
+    console.log(bodyChildElements[i]);
+    console.log(bodyChildElements.item(i));
+  }
 
   const div = bodyChildElements[0];
 
