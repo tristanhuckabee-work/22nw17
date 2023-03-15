@@ -13,7 +13,6 @@ add.addEventListener("click", async () => {
     /*------------ Create new dog card with the url above ------------- */
     /* (use the HTML structure for the current dog image in the index.html
         file to create a new image with the url) */
-    // Your code here
     let dogEl = document.createElement('li')
     dogEl.innerHTML = `<figure>
         <img src="${url}" />
@@ -21,7 +20,6 @@ add.addEventListener("click", async () => {
         </figure>`;
 
     /* Add the new dog card as a child to the ul in the .gallery element */
-    // Your code here
     let ul = document.querySelector('.gallery ul')
     ul.appendChild(dogEl);
   } catch (e) {
@@ -33,12 +31,10 @@ add.addEventListener("click", async () => {
 const removeFirst = document.getElementById("remove-first");
 removeFirst.addEventListener("click", () => {
   /*-------------------- Select the first dog card --------------------- */
-  // Your code here
-  let dogs = document.querySelectorAll('.gallery ul li');
+  let dogs = document.querySelectorAll('li');
   let first = dogs[0];
   
   /*-------------------- Remove the first dog card --------------------- */
-  // Your code here
   first.remove();
 });
 
@@ -46,11 +42,9 @@ removeFirst.addEventListener("click", () => {
 const removeLast = document.getElementById("remove-last");
 removeLast.addEventListener("click", () => {
   /*-------------------- Select the last dog card ----------------------- */
-  // Your code here
-  let dogs = document.querySelectorAll('.gallery ul li');
+  let dogs = document.querySelectorAll('li');
   let last = dogs[dogs.length - 1];
 
   /*-------------------- Remove the last dog card ----------------------- */
-  // Your code here
   last.remove();
 });
