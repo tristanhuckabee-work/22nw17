@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto:wght@500&display=swap');
+
+body {
+  background-color: #555;
+  color: #ccc;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 10%;
+}
+#clockWrapper {
+  align-items: center;
+  background-color: #00000099;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  height: 200px;
+  justify-content: center;
+  width: 100%;
+}
+.time {
+  font-family: 'Amatic SC', cursive;
+  font-size: 7em;
+  line-height: 0.0em;
+}
+#clockWrapper span {
+  color: #990000;
+}
+#clockWrapper p {
+  position: relative;
+  bottom: 20px;
+  line-height: 0.1em;
+}
+
+.detail {
+  list-style: none;
+}
+.detail:hover {
+  color: #990000;
+}
+.name {
+  color: #990000;
+  text-align: center;
+}
+.my-details {
+  background-color: #00000099;
+  border-radius: 5px;
+  padding: 0 10px 10px 10px;
+}
